@@ -15,8 +15,8 @@ def qr_code():
     if not data:
         return "<p>not found</p>"
     qr = qrcode.QRCode(
-        version=3,
-        box_size=20,
+        version=2,
+        box_size=10,
         border=3,
     )
     qr.add_data(data)
